@@ -7,19 +7,19 @@
 
 1. [Font System Overview](#1-font-system-overview)
 2. [Theme Font Architecture](#2-theme-font-architecture)
-3. [snippets/fonts.liquid — Full Code + Explanation](#3-fontsliquid)
-4. [snippets/css-variables.liquid — Full Code + Explanation](#4-css-variablesliquid)
+3. [snippets/fonts.liquid — Full Code + Explanation](#3-snippetsfontsliquid--full-code--explanation)
+4. [snippets/css-variables.liquid — Full Code + Explanation](#4-snippetscss-variablesliquid--full-code--explanation)
 5. [Method 1: Shopify Font Picker](#5-method-1-shopify-font-picker)
 6. [Method 2: Google Fonts](#6-method-2-google-fonts)
-7. [Method 3: Custom .woff2 Upload](#7-method-3-woff2-upload)
-8. [Theme Customizer Settings (settings_schema.json)](#8-theme-customizer-settings)
-9. [CSS Variables — How to Use in CSS](#9-css-variables-use)
-10. [Common Mistakes & Fixes](#10-common-mistakes)
+7. [Method 3: Custom .woff2 Upload](#7-method-3-custom-woff2-upload)
+8. [Theme Customizer Settings (settings_schema.json)](#8-theme-customizer-settings-settings_schemajson)
+9. [CSS Variables — How to Use in CSS](#9-css-variables--how-to-use-in-css)
+10. [Common Mistakes & Fixes](#10-common-mistakes--fixes)
 11. [Quick Checklist](#11-quick-checklist)
 
 ---
 
-## 1. Font System Overview {#1-font-system-overview}
+## 1. Font System Overview
 
 This theme supports **4 font roles** — each can be customized independently:
 
@@ -38,7 +38,7 @@ Each role supports **3 methods** for loading fonts:
 
 ---
 
-## 2. Theme Font Architecture {#2-theme-font-architecture}
+## 2. Theme Font Architecture
 
 ```
 layout/theme.liquid
@@ -60,7 +60,7 @@ config/
 
 ---
 
-## 3. snippets/fonts.liquid — Full Code + Explanation {#3-fontsliquid}
+## 3. snippets/fonts.liquid — Full Code + Explanation
 
 **Create `snippets/fonts.liquid` and paste this code:**
 
@@ -184,7 +184,7 @@ config/
 
 ---
 
-## 4. snippets/css-variables.liquid — Full Code + Explanation {#4-css-variablesliquid}
+## 4. snippets/css-variables.liquid — Full Code + Explanation
 
 **Create `snippets/css-variables.liquid` and paste this code:**
 
@@ -272,7 +272,7 @@ Same if/else pattern for every font role — `heading` as example:
 
 ---
 
-## 5. Method 1: Shopify Font Picker {#5-method-1-shopify-font-picker}
+## 5. Method 1: Shopify Font Picker
 
 **Easiest option — use Shopify's built-in font library**
 
@@ -298,7 +298,7 @@ Same if/else pattern for every font role — `heading` as example:
 
 ---
 
-## 6. Method 2: Google Fonts {#6-method-2-google-fonts}
+## 6. Method 2: Google Fonts
 
 ### Step 1 — Get the Google Fonts URL:
 
@@ -348,7 +348,7 @@ https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=s
 
 ---
 
-## 7. Method 3: Custom .woff2 Upload {#7-method-3-woff2-upload}
+## 7. Method 3: Custom .woff2 Upload
 
 ### Step 1 — Upload .woff2 Files
 
@@ -394,7 +394,7 @@ Upload steps:
 
 ---
 
-## 8. Theme Customizer Settings {#8-theme-customizer-settings}
+## 8. Theme Customizer Settings (settings_schema.json)
 
 **`config/settings_schema.json`** — Heading font block:
 
@@ -453,7 +453,7 @@ Upload steps:
 
 ---
 
-## 9. CSS Variables — How to Use in CSS {#9-css-variables-use}
+## 9. CSS Variables — How to Use in CSS
 
 `css-variables.liquid` outputs `:root` CSS variables in the browser:
 
@@ -514,7 +514,7 @@ getComputedStyle(document.body).getPropertyValue('--font-heading')
 
 ---
 
-## 10. Common Mistakes & Fixes {#10-common-mistakes}
+## 10. Common Mistakes & Fixes
 
 ### ❌ Font not loading
 **Symptom:** Font name is set but fallback font is showing
@@ -552,7 +552,7 @@ Check in Browser DevTools → Element → Computed → `font-family`
 
 ---
 
-## 11. Quick Checklist {#11-quick-checklist}
+## 11. Quick Checklist
 
 ### Google Fonts:
 - [ ] fonts.google.com → select font + weights
