@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎨 Shopify Custom Font Integration
 ## Complete Beginner's Guide — Any Shopify Theme
 
@@ -8,6 +9,12 @@
 
 > **💡 Zero Shopify experience needed.**
 > Every click, every menu name, and every button is spelled out — guiding you through **building this feature from scratch**, in the exact order you'd actually build it.
+=======
+# 🎨 Shopify Custom Font Integration — Complete Beginner's Guide
+### Skeleton Theme — "Zero Shopify Knowledge" Edition
+
+> 💡 This guide assumes you have **never touched Shopify's code editor before**. Every click, every menu name, and every button is spelled out — and it walks you through **building this feature from scratch**, in the exact order you'd actually build it.
+>>>>>>> 3cc43467a0fbe05c77fddaaef30c55045dcf28f6
 
 ---
 
@@ -851,6 +858,7 @@ Then check **DevTools → Elements → (select the element) → Computed tab →
 
 *Beginner-friendly, build-from-scratch guide for the Skeleton theme's custom font system — June 2026.*
 
+<<<<<<< HEAD
 ---
 
 ## 📜 License & Usage
@@ -877,3 +885,11 @@ Then check **DevTools → Elements → (select the element) → Computed tab →
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-patel--harshank-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/patel-harshank/)
 
 *If this guide helped you, consider giving the repo a ⭐ — it means a lot!*
+=======
+## 👤 Author
+
+**Harshank Patel**
+
+- GitHub: [@HarshankPatel9038](https://github.com/HarshankPatel9038)
+- LinkedIn: [@patel-harshank](https://www.linkedin.com/in/patel-harshank/)
+>>>>>>> 3cc43467a0fbe05c77fddaaef30c55045dcf28f6
