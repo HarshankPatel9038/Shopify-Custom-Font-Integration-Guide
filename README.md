@@ -550,6 +550,22 @@ The settings exist (Step 1) and the snippets exist (Steps 2–3) — but nothing
 
 ✅ At this point, the whole system is wired up end to end. Open **Customize** in the Shopify Admin and you should see a new **Typography** section under **Theme settings**.
 
+### ⚠️ Don't Forget — Also add to `layout/password.liquid`
+
+> **Why?** Shopify's `password.liquid` is a **completely separate, standalone layout file** — it is **not** a page that loads inside `theme.liquid`. This means any `{% render %}` calls you added in `theme.liquid` are **completely invisible** to the password page. If you skip this step, the password page will fall back to a generic system font, ignoring all your font settings entirely.
+
+1. **Edit code** → click **Layout** → click `password.liquid`
+2. Add the **exact same two lines** inside `<head>...</head>`:
+
+```liquid
+{% render 'fonts' %}
+{% render 'css-variables' %}
+```
+
+3. Click **Save**
+
+> 📝 The `:root { }` CSS variables set by `css-variables.liquid` are now available on the password page too, so any CSS you write there using `var(--font-heading)` etc. will work correctly.
+
 ---
 
 ## 5. How `fonts.liquid` Works — Line by Line
@@ -822,6 +838,7 @@ Then check **DevTools → Elements → (select the element) → Computed tab →
 - [ ] Step 2: `snippets/fonts.liquid` created with the full code
 - [ ] Step 3: Font variables added inside `:root { }` in `snippets/css-variables.liquid`
 - [ ] Step 4: `{% render 'fonts' %}` and `{% render 'css-variables' %}` added to `<head>` in `layout/theme.liquid`, in that order
+- [ ] Step 4 (password page): Same two render lines also added to `<head>` in `layout/password.liquid` — it is a separate standalone layout and does **not** inherit from `theme.liquid`
 - [ ] Customizer → Theme settings → **Typography** section appears
 
 ### Google Fonts route:
