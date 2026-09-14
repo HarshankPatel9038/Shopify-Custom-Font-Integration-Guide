@@ -1,5 +1,5 @@
 # 🎨 Shopify Custom Font Integration
-## Complete Beginner's Guide — Any Shopify Theme
+## Complete Beginner's Guide — Skeleton Theme
 
 ### *"Zero Shopify Knowledge" Edition*
 
