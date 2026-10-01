@@ -3,8 +3,8 @@
 
 ### *"Zero Shopify Knowledge" Edition*
 
-![Shopify](https://img.shields.io/badge/Shopify-Any%20Theme-96BF48?style=for-the-badge&logo=shopify&logoColor=white)
-![Liquid](https://img.shields.io/badge/Liquid-Template%20Language-blue?style=for-the-badge&logo=shopify)
+![Shopify]
+![Liquid]
 
 > **💡 Zero Shopify experience needed.**
 > Every click, every menu name, and every button is spelled out — guiding you through **building this feature from scratch**, in the exact order you'd actually build it.
