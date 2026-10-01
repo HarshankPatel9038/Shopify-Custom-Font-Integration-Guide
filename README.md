@@ -3,9 +3,6 @@
 
 ### *"Zero Shopify Knowledge" Edition*
 
-![Shopify]
-![Liquid]
-
 > **💡 Zero Shopify experience needed.**
 > Every click, every menu name, and every button is spelled out — guiding you through **building this feature from scratch**, in the exact order you'd actually build it.
 
